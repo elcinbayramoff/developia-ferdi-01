@@ -38,8 +38,8 @@
 #         continue
 #     print(i)
 
-B = ['a','b','c','d','e']
+# B = ['a','b','c','d','e']
 
-for i in range(len(B)):
-    print(i, B[i])
+# for i in range(len(B)):
+#     print(i, B[i])
     
