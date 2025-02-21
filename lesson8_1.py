@@ -173,29 +173,98 @@
 
 # print(people['Ali']['brand'])
 
-"""
-İç-içə lüğətlərdən istifadə edərək 3 adam üçün ad və
-telefon nömrəsindən ibarət kitabça yaradın.
-"""
+# """
+# İç-içə lüğətlərdən istifadə edərək 3 adam üçün ad və
+# telefon nömrəsindən ibarət kitabça yaradın.
+# """
 
-kitabca = {
-    1 : {
-        'name':'Elchin',
-        'phone':'0707007070'
-    },
-    2 : {
-        'name':'Ali',
-        'phone':'0505005050'
-    },
-    3 : {
-        'name':'Vali',
-        'phone':'0555555555'
-    }
+# kitabca = {
+#     1 : {
+#         'name':'Elchin',
+#         'phone':'0707007070'
+#     },
+#     2 : {
+#         'name':'Ali',
+#         'phone':'0505005050'
+#     },
+#     3 : {
+#         'name':'Vali',
+#         'phone':'0555555555'
+#     }
+# }
+
+# phone_numbers = []
+
+# for value in kitabca.values():
+#     phone_numbers.append(value['name'])
+    
+# print(phone_numbers)
+
+
+practice_dict = { #dictionary
+    #Key     #Value
+    'name'   :'Elchin', #item
+    'surname':'Bayramli', #item
+    'address':'Baku' #item
 }
 
-phone_numbers = []
+#1ci
+# soyad = practice_dict['surname']
+# print(soyad)
+#2ci
+# ad = practice_dict.get('name', 'Tapilmadi')
+# print(ad)
 
-for value in kitabca.values():
-    phone_numbers.append(value['name'])
+#.values()
+
+# for key, value in practice_dict.items():
+#     if value == 'Elchin':
+#         print(key)
+
+# print(practice_dict)
+
+# practice_dict = { #dictionary
+#     #Key     #Value
+#     'name'   :'Elchin', #item
+#     'surname':'Bayramli', #item
+#     'address':'Baku' #item
+# }
+
+# practice_dict['age'] = 19
+# print(practice_dict)
+
+
+# az_en = {
+#     'run':'qacmaq',
+#     'high':'yuksek',
+#     'rain':'yagis',
+#     'school':'mekteb'
+# }
+
+# sentence = input('Cumleni daxil edin: ')
+# sentence_copy = sentence
+# # "run high rain school"
+# # "qacmaq yuksek yagis mekteb"
+# sentence = sentence.strip() #Evvel ve sondan boşluqları təmizlədi
+
+# words = sentence.split()#Cümləni boşluqlara görə ayıraraq sözlərə böldü.Nəticə list oldu
+# #['high', 'run', 'slow', 'higher']
+
+# translated_words = []
+# for word in words:
     
-print(phone_numbers)
+#     if word in az_en:
+#         translated_words.append(az_en[word])
+#     else:
+#         translated_words.append(word)
+
+# result = ' '.join(translated_words)
+# print('Sentence:',sentence_copy)
+# print('Translated:',result)
+
+
+A = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
