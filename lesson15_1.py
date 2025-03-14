@@ -5,9 +5,19 @@ r - faylları oxumaq üçün
 w - Fayları yazmaq üçün
 """
 
-# f = open('lessons.txt', 'w')
+# f = open('lessons.txt', 'r+')
+
+# b = f.read()
+# print('B:', b)
 
 # f.write('Tarix')
+# print('Tell 1',f.tell())
+
+# f.seek(2)
+
+# print('Tell 2',f.tell())
+# a = f.read()
+# print('Read: ',a)
 
 # f.close()
 
@@ -54,22 +64,28 @@ w - Fayları yazmaq üçün
 
 # f.close()
 
-f = open('lessons.txt', 'r+')
-data = f.read()
-print(f.tell())
-f.seek(0)
-f.write('Salam')
+# f = open('lessons.txt', 'r+')
+# data = f.read()
+# print(f.tell())
+# f.seek(0)
+# f.write('Salam')
 
-f.close()
-
-f = open('lessons.txt','a')
-
-f.write('Salam')
-
-f.close()
-
-with open('lessons.txt','a') as f:
-    f.write('Salam')
+# f.close()
 
 
+# f = open('lessons.txt','a')
+
+# f.write('Salam')
+
+# f.close()
+
+# with open('lessons.txt','w') as f:
+#     f.write('Salam')
+
+"""
+*
+**
+***
+****
+"""
 
