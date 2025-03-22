@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "brand": "Mercedes",
+        "model": "S",
+        "year": 2024,
+        "price": 20000.0,
+        "color": "Black"
+    },
+    {
+        "id": 2,
+        "brand": "Porsche",
+        "model": "Cayen",
+        "year": 2020,
+        "price": 20000.0,
+        "color": "White"
+    }
+]
