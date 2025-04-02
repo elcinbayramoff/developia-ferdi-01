@@ -1,8 +1,9 @@
-import pandas as pd
-import os
+# import pandas as pd
+# import os
 
 
 # df = pd.read_excel('sales.xlsx', sheet_name=0, usecols=[0,1, 3])
+
 # df - > DataFrame
 # df = pd.read_excel('sales.xlsx', sheet_name='Satis')
 # print(df.head())
