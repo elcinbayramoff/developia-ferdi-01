@@ -53,3 +53,9 @@
 # sortlamaq(Profit) azalan
 # top 10 data (.head(10))
 #Excel faylina elave etmek
+
+import pandas as pd
+
+df = pd.read_excel('data1.xlsx',sheet_name=0)
+
+df.head(10).to_json('data1.json', force_ascii=False, indent=4)
