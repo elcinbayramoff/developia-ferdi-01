@@ -72,21 +72,21 @@ import pandas as pd
 # print(df[['Uygunsuzluq','Imtiyaz']][df['Uygunsuzluq']==True])
 
 
-def calculate_emeliyyat_haqqi(gomruk_deyeri):
-    if gomruk_deyeri <= 1000:
-        return 30
-    elif gomruk_deyeri <= 10000:
-        return 120
-    elif gomruk_deyeri <= 50000:
-        return 240
-    elif gomruk_deyeri <= 100000:
-        return 400
-    elif gomruk_deyeri <= 500000:
-        return 600
-    elif gomruk_deyeri <= 1000000:
-        return 1200
-    else:
-        return 2000
+# def calculate_emeliyyat_haqqi(gomruk_deyeri):
+#     if gomruk_deyeri <= 1000:
+#         return 30
+#     elif gomruk_deyeri <= 10000:
+#         return 120
+#     elif gomruk_deyeri <= 50000:
+#         return 240
+#     elif gomruk_deyeri <= 100000:
+#         return 400
+#     elif gomruk_deyeri <= 500000:
+#         return 600
+#     elif gomruk_deyeri <= 1000000:
+#         return 1200
+#     else:
+#         return 2000
     
 # df = pd.read_excel('data1.xlsx', sheet_name=0)
 
@@ -123,9 +123,10 @@ df = pd.read_excel('data1.xlsx', sheet_name=0)
 
 # print(df[['Malın adı','Netto cəkisi','Malın miqdarı 1','Ölcu vahidi 1', '1 cut netto']][df['Ölcu vahidi 1'] == 'cüt'])
 
-df['1 cut netto'] = df.apply(
-    lambda row: row['Netto cəkisi'] / row['Malın miqdarı 1'],
-    axis=1
-)
+# df['1 cut netto'] = df.apply(
+#     lambda row: row['Netto cəkisi'] / row['Malın miqdarı 1'],
+#     axis=1
+# )
 
-print(df[['Malın adı','Netto cəkisi','Malın miqdarı 1','Ölcu vahidi 1', '1 cut netto']][df['Ölcu vahidi 1'] == 'cüt'])
+# print(df[['Malın adı','Netto cəkisi','Malın miqdarı 1','Ölcu vahidi 1', '1 cut netto']][df['Ölcu vahidi 1'] == 'cüt'])
+print(df['Gomruk dəyəri'].mean())

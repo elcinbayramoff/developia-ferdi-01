@@ -1,1 +1,1 @@
-results
+    print('Uğurla yerinə yetirildi')
